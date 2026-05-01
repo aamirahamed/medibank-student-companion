@@ -1,11 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronRight, ArrowRight, Lightbulb, CheckCircle2, Calendar, MessageCircle, Star, MessageSquare, HeartPulse, Stethoscope, CreditCard, FilePlus, Circle } from 'lucide-react';
+import { ChevronRight, ArrowRight, Lightbulb, CheckCircle2, Calendar, MessageCircle, Star, MessageSquare, HeartPulse, Stethoscope, CreditCard, FilePlus, Circle, Sparkles } from 'lucide-react';
 import { journeyStages } from '../data/journeyData';
 import OvhcConversionCard from '../components/OvhcConversionCard';
 import './Home.css';
 
 const quickActions = [
+  { id: 'mediguide', label: 'MediGuide AI', icon: Sparkles, route: '/mediguide' },
   { id: 'contact', label: 'Contact us', icon: MessageSquare, route: '/support' },
   { id: 'support', label: '24/7 support', icon: HeartPulse, route: '/health-advice' },
   { id: 'doctor', label: 'Find a doctor', icon: Stethoscope, route: '/find' },

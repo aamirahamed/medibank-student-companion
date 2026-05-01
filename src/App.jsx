@@ -15,6 +15,7 @@ import Health from './pages/Health';
 import HealthImpactDetail from './pages/HealthImpactDetail';
 import Profile from './pages/Profile';
 import OvhcTransition from './pages/OvhcTransition';
+import MediGuide from './pages/MediGuide';
 import BottomNavigation from './components/BottomNavigation';
 import './index.css';
 
@@ -36,9 +37,10 @@ const AppContent = () => {
     }
   }, [navigate, location.pathname]);
 
-  const isHiddenRoute = 
+  const isHiddenRoute =
     location.pathname === '/onboarding' ||
     location.pathname === '/ovhc-transition' ||
+    location.pathname === '/mediguide' ||
     location.pathname === '/health/impact' ||
     location.pathname.startsWith('/journey/task/') ||
     location.pathname.startsWith('/community/group/') ||
@@ -65,6 +67,7 @@ const AppContent = () => {
           <Route path="/health-advice" element={<Health />} />
           <Route path="/health/impact" element={<HealthImpactDetail />} />
           <Route path="/ovhc-transition" element={<OvhcTransition />} />
+          <Route path="/mediguide" element={<MediGuide />} />
           <Route path="/find" element={<PlaceholderPage title="Find" />} />
           <Route path="/me" element={<Profile />} />
         </Routes>

@@ -5,6 +5,7 @@ import {
   AlertTriangle, ArrowRight, CreditCard, 
   Clock, Award, HeartPulse, Sparkles
 } from 'lucide-react';
+import PremiumReferralCard from '../components/PremiumReferralCard';
 import './OvhcTransition.css';
 
 const OvhcTransition = () => {
@@ -219,6 +220,10 @@ const OvhcTransition = () => {
             <span className="sd-label">Rewards</span>
             <span className="sd-value">2,400 pts carried over</span>
           </div>
+        </div>
+        
+        <div className="success-referral-wrapper" style={{ marginTop: '24px' }}>
+          <PremiumReferralCard variant="compact" />
         </div>
       </div>
 

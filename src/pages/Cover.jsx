@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import {
   CreditCard, Receipt, MapPin, BookOpen, HelpCircle,
   ChevronRight, ArrowRight, Lightbulb, Shield,
-  FileText, Phone, CheckCircle, Eye, EyeOff,
+  FileText, Phone, CheckCircle, Eye, EyeOff, Users, Award, Sparkles
 } from 'lucide-react';
+import PremiumReferralCard from '../components/PremiumReferralCard';
 import './Cover.css';
 
 /* ── Mock cover data ── */
@@ -187,6 +188,9 @@ const Cover = () => {
             })}
           </div>
         </div>
+
+        {/* ── Premium Referral Card ── */}
+        <PremiumReferralCard />
 
         {/* ── Smart Insight ── */}
         <div className="cover-insight-card">

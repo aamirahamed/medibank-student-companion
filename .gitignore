@@ -16,6 +16,9 @@ dist-ssr
 # Admin Engine Repo
 admin-engine/
 
+# Keynote Repo
+keynote/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
